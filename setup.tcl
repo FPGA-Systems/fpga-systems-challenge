@@ -21,7 +21,7 @@ foreach fsc [glob -directory ${self_path}/src -type d *] {
                  -value {-mode out_of_context} \
                  -objects [get_runs synth_1]
     launch_runs synth_1
-    wait_on_runs synth_1
+    wait_on_run synth_1; # not wait_on_runS due 2021 have wait_on_run
     open_run synth_1 -name synth_1
     write_checkpoint ${self_path}/dcps/${name}.dcp
     close_project
