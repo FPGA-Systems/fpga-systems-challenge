@@ -30,5 +30,3 @@ puts "\n\n"
 puts "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 puts "= = = C A L L E N G E - F I L E S - H A S - B E E N - G E N E R A T E D = = ="
 puts "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-
-exit
