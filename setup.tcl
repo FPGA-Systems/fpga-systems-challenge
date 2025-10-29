@@ -8,7 +8,7 @@ file mkdir $dir_projects
 
 foreach fsc [glob -directory ${self_path}/src -type d *] {
     set name [file tail $fsc]
-    if { [catch {create_project $name ${dir_projects}/${name}/$name -part xc7a35tcsg324-1} err] } {
+    if { [catch {create_project $name ${dir_projects}/${name} -part xc7a35tcsg324-1} err] } {
         puts "|FSC::INFO| ==> Skip generate project for $name, since it already exists."
         continue
     }
